@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <string.h>
 using namespace std;
 int calculate()
 {
@@ -36,7 +37,15 @@ int calculate()
   }
   return 0;
 }
-
+void * reverse(char *str) 
+{
+  int i, len;
+  len = strlen(str);
+  for (i=len;i>=0;i--) 
+      printf("%c",str[i]);
+  return 0;
+  
+}
 void encrypt()
 {
   int i;
@@ -64,5 +73,7 @@ int main(void)
   // calculate();
   // encrypt();
   // decrypt();
+  // char a[] = "TickerTheGoat";
+  // reverse(a);
   return 0;
 }
